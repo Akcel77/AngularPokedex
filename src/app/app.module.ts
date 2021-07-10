@@ -12,6 +12,7 @@ registerLocaleData(localeFR);
 import { GenerationsComponent } from './composants/generations/generations.component';
 import { PokemonsComponent } from './composants/pokemons/pokemons.component';
 import { PokemonComponent } from './composants/pokemon/pokemon.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PokemonComponent } from './composants/pokemon/pokemon.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'fr' }],
   bootstrap: [AppComponent]
